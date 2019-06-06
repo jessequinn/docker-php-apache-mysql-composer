@@ -29,3 +29,5 @@ Change ownership and give full access to all groups/users:
 These commands should be used on host filesystem.
 
 At this point, you can easily `git clone` a repo on the host system into the html folder and run composer.
+
+This docker also includes Xdebug which integrates nicely with PHPStorm.
