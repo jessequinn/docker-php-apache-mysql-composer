@@ -1,4 +1,3 @@
-
 # Docker Compose for Symfony 4 with PHP, Apache, mySQL and Composer
 This git provides a docker infrastructure for Symfony development.
 ## Configuration
@@ -29,4 +28,4 @@ Change ownership and give full access to all groups/users:
     $ sudo chown -R username:username html/
 These commands should be used on host filesystem.
 
-At this point, you can easily git clone a repo on the host system into the html folder and run composer.
+At this point, you can easily `git clone` a repo on the host system into the html folder and run composer.
