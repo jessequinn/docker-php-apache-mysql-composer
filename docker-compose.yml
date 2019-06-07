@@ -3,7 +3,7 @@ version: '3.2'
 services:
   db:
     image: mysql:${MYSQL_VERSION}
-    container_name: db
+    container_name: vivitv_db
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -16,7 +16,7 @@ services:
       context: './.docker/phpApache/'
       args:
         PHP_VERSION: ${PHP_VERSION}
-    container_name: php_web
+    container_name: vivitv_php_web
     depends_on:
       - db
     volumes:
