@@ -2,9 +2,9 @@ ARG PHP_VERSION=""
 FROM php:${PHP_VERSION}-apache
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git zlib1g-dev libzip-dev zip unzip
+    && apt-get install -y --no-install-recommends git zlib1g-dev libzip-dev zip unzip mysql-client
 
-RUN docker-php-ext-install pdo_mysql zip
+RUN docker-php-ext-install pdo_mysql zip mysqli
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
 
